@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  height: 550px;
+  /* height: min(550px); */
   background-color: #4416FE;
 }
 
@@ -49,8 +49,9 @@ nav {
 .header-text {
   color: #fff;
   margin-left: 60px;
-  float: left;
+  /* float: left; */
   margin-top: 100px;
+  padding-bottom: 200px;
 }
 
 .header-text h2 {
@@ -65,8 +66,17 @@ nav {
 }
 
 .header-image {
+  /* display: none; */
   float: right;
-  height: 600px;
+  height: min(600px);
+}
+
+@media (min-width: 1370px) {
+  .header-image {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+  }
 }
 
 .companies {
